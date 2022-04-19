@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="container">
+    <nav class="nav-container">
       <div class="branding">
         <NuxtLink class="header" to="/">ARBlogs</NuxtLink>
       </div>
@@ -25,9 +25,9 @@
   </header>
 </template>
 <script>
-import menuIcon from '../public/assets/icons/bars.svg'
+import menuIcon from '../assets/icons/bars.svg'
 export default {
-  name: 'navigation',
+  name: 'NavigationComponent',
   components: {
     menuIcon
   },
@@ -96,6 +96,7 @@ export default {
   }
   ul {
     margin-right: 32px;
+    margin-bottom: 5px;
   }
   .link {
     margin-right: 32px;
@@ -125,7 +126,7 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #202020;
+    background-color: whitesmoke;
     -webkit-animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   }
@@ -163,7 +164,7 @@ export default {
 
   .link {
     padding: 15px 0;
-    color: white;
+    color: black;
   }
 }
 </style>
