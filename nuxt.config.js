@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -18,7 +18,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['@/global.styles.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -30,8 +30,37 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyB2h-a2oa9qWH7HjIxo-5o5jJrsaOLjv9g',
+          authDomain: 'arblogg.firebaseapp.com',
+          projectId: 'arblogg',
+          storageBucket: 'arblogg.appspot.com',
+          messagingSenderId: '878058749176',
+          appId: '1:878058749176:web:7bdb1d640505ef1bca8f0d',
+        },
+        services: {
+          auth: true,
+          firestore: true,
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extend: (config) => {
+      const svgRule = config.module.rules.find((rule) => rule.test.test('.svg'))
+
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: ['vue-loader', 'vue-svg-loader'],
+      })
+    },
+  },
 }

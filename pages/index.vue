@@ -1,9 +1,11 @@
 <template>
-  <Tutorial />
+  <div class="app">
+    <navigation></navigation>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'HomePage'
 }
 </script>
