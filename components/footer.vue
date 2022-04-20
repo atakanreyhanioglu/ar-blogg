@@ -8,22 +8,22 @@
           </NuxtLink>
           <ul class="icons">
             <li>
-              <a href="https://github.com/atakanreyhanioglu">
+              <a target="_blank" href="https://github.com/atakanreyhanioglu">
                 <git-hub-icon class="svg-icon"></git-hub-icon>
               </a>
             </li>
             <li>
-              <a href="https://medium.com/@atakan.reyhanioglu">
+              <a target="_blank" href="https://medium.com/@atakan.reyhanioglu">
                 <medium-icon class="svg-icon"></medium-icon>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/atakan-reyhanio%C4%9Flu-631730185/">
+              <a target="_blank" href="https://www.linkedin.com/in/atakan-reyhanio%C4%9Flu-631730185/">
                 <linked-in-icon class="svg-icon"></linked-in-icon>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/ataa_ata/">
+              <a target="_blank" href="https://www.instagram.com/ataa_ata/">
                 <instagram-icon class="svg-icon"></instagram-icon>
               </a>
             </li>
@@ -57,6 +57,12 @@ export default {
     instagramIcon,
     gitHubIcon,
     mediumIcon
+  },
+  data() {
+    return {
+      //@TODO hata silmek için
+      user: true
+    }
   }
 }
 </script>

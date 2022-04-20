@@ -2,7 +2,7 @@
   <header>
     <nav class="nav-container">
       <div class="branding">
-        <NuxtLink class="header" to="/">ARBlogs</NuxtLink>
+        <NuxtLink class="header" to="/">ARBlogg</NuxtLink>
       </div>
       <div class="nav-links">
         <ul v-show="!mobileNav">
