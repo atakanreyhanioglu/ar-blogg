@@ -8,13 +8,13 @@
           </NuxtLink>
           <ul class="icons">
             <li>
-              <a target="_blank" href="https://github.com/atakanreyhanioglu">
-                <git-hub-icon class="svg-icon"></git-hub-icon>
+              <a target="_blank" href="https://medium.com/@atakan.reyhanioglu">
+                <medium-icon class="svg-icon"></medium-icon>
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://medium.com/@atakan.reyhanioglu">
-                <medium-icon class="svg-icon"></medium-icon>
+              <a target="_blank" href="https://github.com/atakanreyhanioglu">
+                <git-hub-icon class="svg-icon"></git-hub-icon>
               </a>
             </li>
             <li>
@@ -39,13 +39,13 @@
         </ul>
       </div>
       <div class="row row-3">
-        <p>&copy; Copyright 2022 All Rights Reserved.</p>
+        <p class="copy-right">&copy; Copyright 2022 All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 </template>
 <script>
-import gitHubIcon from '../assets/icons/gitHub.svg'
+import gitHubIcon from 'vue-material-design-icons/Github.vue'
 import linkedInIcon from '../assets/icons/linkedin.svg'
 import instagramIcon from '../assets/icons/instagram.svg'
 import mediumIcon from '../assets/icons/medium.svg'
@@ -97,6 +97,9 @@ export default {
  }
  .row-3 {
     padding-top: 50px;
+ }
+ .copy-right {
+   color: black;
  }
  @media screen and (max-width: 750px) {
    .col {

@@ -10,11 +10,12 @@
 </template>
 
 <script>
+import BlogPostComponent from '@/components/blogPost'
 import NavigationComponent from "@/components/navigation";
 import FooterComponent from "@/components/footer";
 export default {
   name: 'HomePage',
-  components: {FooterComponent, NavigationComponent},
+  components: {NavigationComponent, BlogPostComponent, FooterComponent},
   data() {
     return {
       welcomeScreen: {
@@ -47,7 +48,7 @@ export default {
 }
 .content {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 .footer {
   background-color: whitesmoke;
