@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <NavigationComponent class="nav"></NavigationComponent>
-    <div class="content">
-      <BlogPost :post="welcomeScreen"/>
-      <BlogPost :post="post" v-for="(post, index) in sampleBlogPost" :key="index"/>
-    </div>
-    <FooterComponent class="footer"></FooterComponent>
+    <div class="container">
+      <NavigationComponent class="nav"></NavigationComponent>
+      <div class="content">
+        <BlogPost :post="welcomeScreen"/>
+        <BlogPost :post="post" v-for="(post, index) in sampleBlogPost" :key="index"/>
+      </div>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
   components: {NavigationComponent, BlogPostComponent, FooterComponent},
   data() {
     return {
+      footerBackground: 'whitesmoke',
       welcomeScreen: {
         title: "WELCOME!",
         blogPost: "Weekly blog articles with all things programming including HTML, CSS, JavaScript and more. Register today to never miss a post!",
@@ -48,9 +49,5 @@ export default {
 }
 .content {
   width: 100%;
-  height: 90vh;
-}
-.footer {
-  background-color: whitesmoke;
 }
 </style>

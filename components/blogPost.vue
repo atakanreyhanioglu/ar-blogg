@@ -18,7 +18,7 @@
       <div class="home-col-2">
         <img v-if="post.welcomeScreen" :src="require(`../assets/blogPhotos/${post.photo}.png`)"
              alt="cover picture for welcome screen."/>
-        <img v-else :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.jpg`)" alt="cover image for blog post."/>
+        <img v-else :src="require(`../assets/blogPhotos/${post.blogCoverPhoto}.png`)" class="image" alt="cover image for blog post."/>
       </div>
     </div>
   </div>
@@ -117,12 +117,13 @@ img {
 @media screen and (max-width: 750px) {
   .blog-content {
     flex-direction: column-reverse;
+    gap: 0px;
   }
 
   img {
-    padding-top: 40px;
     width: 100%;
-    height: 100%;
+    height: 450px;
+    margin-top: 10px;
   }
 
   .home-col-1 {
@@ -132,6 +133,7 @@ img {
 
   .home-col-2 {
     width: 100%;
+    height: 60%;
   }
   .blog-content {
     height: 85vh;
