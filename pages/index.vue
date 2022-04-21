@@ -29,12 +29,12 @@ export default {
         {
           title: "This is a Filler Title!2",
           blogHTML: "This is a filler blog post title!",
-          blogCoverPhoto: "blogImage"
+          blogCoverPhoto: "last-image"
         },
         {
-          title: "This is a Filler Title!",
-          blogHTML: "This is a filler blog post title!",
-          blogCoverPhoto: "blogImage"
+          title: "What is my duties as a programmer?",
+          blogHTML: "Should I take care about all the project by myself or manage it with my team ?",
+          blogCoverPhoto: "blog-image"
         }
       ]
     }

@@ -100,8 +100,8 @@ img {
 
 @keyframes increase {
   0% {
-    border-bottom: 2px solid #fff;
-    width: 5%;
+    border-bottom: 2px solid transparent;
+    width: 0px;
   }
   100% {
     border-bottom: 2px solid #fff;
@@ -117,7 +117,7 @@ img {
 @media screen and (max-width: 750px) {
   .blog-content {
     flex-direction: column-reverse;
-    gap: 0px;
+    gap: 0;
   }
 
   img {
