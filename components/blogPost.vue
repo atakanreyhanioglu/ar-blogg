@@ -7,11 +7,11 @@
         <p v-if="post.welcomeScreen">{{ post.blogPost }}</p>
         <p class="content-preview" v-else>{{ post.blogHTML }}</p>
         <NuxtLink to="#" class="post-detail" v-if="post.welcomeScreen">
-          Login/Register
+          <p>Login/Register</p>
           <Arrow class="arrow"/>
         </NuxtLink>
         <NuxtLink class="post-detail link link-light" to="" v-else>
-          View The Post
+           <p>View Post</p>
           <Arrow class="arrow"/>
         </NuxtLink>
       </div>
@@ -101,7 +101,7 @@ img {
 @keyframes increase {
   0% {
     border-bottom: 2px solid transparent;
-    width: 0px;
+    width: 0;
   }
   100% {
     border-bottom: 2px solid #fff;

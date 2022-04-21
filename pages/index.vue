@@ -33,7 +33,7 @@ export default {
         },
         {
           title: "What is my duties as a programmer?",
-          blogHTML: "Should I take care about all the project by myself or manage it with my team ?",
+          blogHTML: "Should I take care about all the project by myself or manage it with my team?",
           blogCoverPhoto: "blog-image"
         }
       ]
