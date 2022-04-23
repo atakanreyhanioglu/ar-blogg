@@ -129,6 +129,7 @@ img {
   .home-col-1 {
     width: 100%;
     gap: 10px;
+    margin: -10px;
   }
 
   .home-col-2 {
